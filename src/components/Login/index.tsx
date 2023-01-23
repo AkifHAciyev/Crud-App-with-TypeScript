@@ -1,6 +1,11 @@
-import { useRef } from 'react';
+import { Dispatch, SetStateAction, useRef } from 'react';
 
-const Login = ({ showBtn, setShowBtn }) => {
+export interface Props {
+	showBtn: boolean;
+	setShowBtn: Dispatch<SetStateAction<boolean>>;
+}
+
+const Login = ({ setShowBtn }: Props) => {
 	const userName = useRef<HTMLInputElement | null>(null);
 	const getUser = localStorage.getItem('name');
 	const handleSubmit = () => {
@@ -9,8 +14,6 @@ const Login = ({ showBtn, setShowBtn }) => {
 			setShowBtn(true);
 		}
 	};
-
-	console.log(showBtn);
 
 	const handleClick = () => {
 		localStorage.clear();

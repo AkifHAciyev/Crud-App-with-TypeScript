@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Login from '../Login';
 
-const Header = ({ showBtn, setShowBtn }) => {
+const Header = ({ showBtn, setShowBtn }: any) => {
 	return (
 		<>
 			<div className="header">

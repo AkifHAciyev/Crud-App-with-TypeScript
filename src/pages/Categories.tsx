@@ -2,7 +2,7 @@ import { ChangeEvent, SyntheticEvent, useEffect, useState } from 'react';
 import { Category } from '../models/categories';
 import { CategoriesService } from '../network/categories/Categories';
 
-function Categories({ showBtn }) {
+function Categories({ showBtn }: any) {
 	const [categories, setCategories] = useState<Category[]>([]);
 	const [newCategories, setNewCategories] = useState<Category>({
 		description: '',

@@ -1,7 +1,7 @@
 import { ChangeEvent, SyntheticEvent, useEffect, useState } from 'react';
 import { Product } from '../models/products';
 import { ProductService } from '../network/products/Products';
-function Products({ showBtn }) {
+function Products({ showBtn }: any) {
 	const [products, setProducts] = useState<Product[]>([]);
 	const [newProduct, setNewProduct] = useState<Product>({
 		name: '',

@@ -1,9 +1,15 @@
+import { Dispatch, SetStateAction } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Categories from '../../pages/Categories';
 import Products from '../../pages/Products ';
 import Suppliers from '../../pages/Suppliers';
 
-const Main = ({ showBtn }) => {
+export interface Props {
+	showBtn: boolean;
+	setShowBtn: Dispatch<SetStateAction<boolean>>;
+}
+
+const Main = ({ showBtn }: Props) => {
 	return (
 		<Routes>
 			<Route path="/" element={<Suppliers showBtn={showBtn} />} />

@@ -2,7 +2,7 @@ import { ChangeEvent, SyntheticEvent, useEffect, useState } from 'react';
 import { Supplier } from '../models/suppliers';
 import { SuppliersService } from '../network/suppliers/Suppliers';
 
-function Suppliers({ showBtn }) {
+function Suppliers({ showBtn }: any) {
 	const [suppliers, setSuppliers] = useState<Supplier[]>([]);
 	const [newSuppliers, setNewSuppliers] = useState<Supplier>({
 		companyName: '',
