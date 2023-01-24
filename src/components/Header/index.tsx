@@ -16,6 +16,9 @@ const Header = ({ showBtn, setShowBtn }: any) => {
 						<li>
 							<Link to={'/categories'}>Categories</Link>
 						</li>
+						<li>
+							<Link to={'/query'}>Query</Link>
+						</li>
 					</ul>
 				</nav>
 				<Login showBtn={showBtn} setShowBtn={setShowBtn} />
